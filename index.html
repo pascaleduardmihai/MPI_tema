@@ -1,0 +1,152 @@
+                <!-- <em> pt italic - emphasis // <strong> pt bold in loc de <b> sau <i>-->
+                <!-- <del> pentru strikethrough line .. <ins> pentru underlined -->
+                <!-- <mark> pt highlight // <small> scade fontsize cu 1? -->
+                <!-- type=""  a,A,i,I for ordered lists-->
+                <!-- <hr> horizontal line (horizontal rule??) -->
+                <!-- pt img src="path to img/aboslute path" alt="text display if img not available" width=""/height="" -->
+                <!-- pentru referinte in aceeasi pagina se creaza un atribut id="exemplu" la care se ajunge cu <a href="#exemplu" -->
+                <!-- <a href=""></a> - inline -->
+                <!-- tag-uri de <header>, <aside>, <main>, <footer> folosite in body doar tin locul de div-uri pt a se observa mai bine -->
+                <!-- tag <nav> folosit ca ajutor pt navigare - standalone nu face nimic -->
+                <!-- reserved symbols: (< = &lt;) (> = &gt;) (& = &amp;) (" = &quot;) (copyright symbol = &copy;) (registered trademark = &reg;) se gasesc pe net - unicode-table.com-->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Tech Store</title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@100&display=swap" rel="stylesheet">
+
+    </head>
+    
+    <body>
+        <!-- 
+TODO:
+1. Create shop.html
+2. Style using css
+         -->
+        <header>
+            <h1>Tech Store</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">home</a></li>
+                    <li><a href="">shop</a></li>
+                    <li><a href="contact.html">contact us</a></li>
+                </ul>
+            </nav>
+            <input typ="search" placeholder="search...">
+        </header>
+
+        <aside>
+            <h2>Shop by:</h2>
+
+            <section>
+            <h3>Category</h3>
+            <hr>
+            <ul>
+                <li>All items</li>
+                <li>Cameras</li>
+                <li>Laptops</li>
+                <li>Phones</li>
+                <li>Accesories</li>
+                <li>Other</li>
+            </ul>
+            </section>
+
+            <section>
+            <h3>Price <span>($)</span></h3>
+            <hr>
+            <ul>
+                <li>1 - 9</li>
+                <li>10 - 29</li>
+                <li>30 - 59</li>
+                <li>60 - 99</li>
+                <li>100 +</li>
+            </ul>
+            </section>
+        </aside>
+<!-- Main Section To Display Products -->
+        <main>
+            <h2>All items:</h2>
+            <div class="product">
+                <a href="product-detail.html">
+                    <img src="img/controller.jpg" alt="game controller picture">
+                </a>
+                <h4><a href="product-detail.html">Game Controller</a></h4>
+                <p>$ 79.95</p>
+                <p>Awesome game controller<br> for Xbox!</p>
+                <a href="product-detail.html" class="button">More info</a> 
+                <a href="" class="button" id="position">Add To Cart</a>   
+            </div>
+
+            <div class="product">
+                <a href="">
+                    <img src="img/headphones.jpg" alt="headphones picture">
+                </a>
+                <h4><a href="">White Headphones</a></h4>
+                <p>$ 54.95</p>
+                <p>Awesome white<br>headphones!</p>
+                <a href="" class="button">More info</a> 
+                <a href="" class="button">Add To Cart</a>   
+            </div>
+
+            <div class="product">
+                <a href="">
+                    <img src="img/camera.jpg" alt="camera picture">
+                </a>
+                <h4><a href="">Canon Camera</a></h4>
+                <p>$ 649.95</p>
+                <p>Awesome camera<br> by Canon!</p>
+                <a href="" class="button">More info</a> 
+                <a href="" class="button">Add To Cart</a>   
+            </div>
+
+            <div class="product">
+                <a href="">
+                    <img src="img/microphone.jpg" alt="microphone picture">
+                </a>
+                <h4><a href="">Microphone</a></h4>
+                <p>$ 119.95</p>
+                <p>Awesome Blue<br> Yeti Microphone!</p>
+                <a href="" class="button">More info</a> 
+                <a href="" class="button">Add To Cart</a>   
+            </div>
+
+            <div class="product">
+                <a href="">
+                    <img src="img/cables.jpg" alt="cables picture">
+                </a>
+                <h4><a href="">Cables</a></h4>
+                <p>$ 10.95</p>
+                <p>Awesome cables available<br> in different lengths!</p>
+                <a href="" class="button">More info</a> 
+                <a href="" class="button">Add To Cart</a>   
+            </div>
+
+            <div class="product">
+                <a href="">
+                    <img src="img/lenses.jpg" alt="camera lenses picture">
+                </a>
+                <h4><a href="">Camera Lenses</a></h4>
+                <p>$ 99.95</p>
+                <p>Awesome camera<br> lenses (for Canon models &lt; 2017)!</p>
+                <a href="" class="button">More info</a> 
+                <a href="" class="button">Add To Cart</a>   
+            </div>
+        </main>
+
+        <footer>
+            <nav>
+                <ul>
+                    <li><a href="index.html">home</a></li>
+                    <li><a href="">shop</a></li>
+                    <li><a href="contact.html">contact us</a></li>
+                </ul>
+            </nav>
+        </footer>
+        
+    </body>
+</html>
